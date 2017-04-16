@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="google-signin-client_id" content="409533681426-de683khvors4oc30os4dh1jr7jemr1su.apps.googleusercontent.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> OLMRCS - Home </title>
+	<!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">-->
+</head>
+
+<style>
+::selection {
+  background: #5DADE2;
+  color: #ffffff;
+}
+h4{
+	margin: 0px;
+	padding: 0px;
+}
+.h3{
+	font-family: Century Gothlic;
+	left: 70px;
+	padding-top: 7px;
+	padding-left: 8px;
+	margin: 0px;
+	position: absolute;
+}
+html, body{
+	height: 100%;
+    margin: 0;
+    padding:0;
+    background-color: white;
+}
+.slide-left {
+     animation-name: slidein;
+	 animation-duration: 5s;
+}
+@keyframes slidein{
+	from{
+	margin-right: 100%;
+	}
+	to{
+	margin-right: 0%;
+	}
+}
+.hidden{
+	display: none;
+}
+.fade_in{
+    -webkit-animation: fadein 4s; 
+       -moz-animation: fadein 4s; 
+        -ms-animation: fadein 4s; 
+         -o-animation: fadein 4s; 
+            animation: fadein 4s;
+}
+.fade_in2{
+    -webkit-animation: fadein 4s; 
+       -moz-animation: fadein 4s; 
+        -ms-animation: fadein 4s; 
+         -o-animation: fadein 4s; 
+            animation: fadein 4s;
+			animation-delay: 1s;
+}
+.fade_in3{
+    -webkit-animation: fadein 4s; 
+       -moz-animation: fadein 4s; 
+        -ms-animation: fadein 4s; 
+         -o-animation: fadein 4s; 
+            animation: fadein 4s;
+			animation-delay: 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    margin: 0 auto -142px;
+	background: #E5E7E9;
+    max-width: 100%;
+    align: center;
+}
+.push {
+    height: 300px;
+}
+
+.button {
+  display: inline;
+  border-radius: 4px;
+  background-color: #717D7E;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  padding: 12px 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+
+}
+    .olmbutton {
+        display: inline;
+  background-color: transparent;
+  border: solid 1px white;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  padding: 12px 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-family: Century Gothic; color:#ffffff; text-align: center;font-weight: lighter
+    
+    }
+    .olmbutton:hover {
+        border: solid 1px rgb(40, 180, 99);
+        border-radius: 5px;
+        background-color: rgb(40, 180, 99);
+        padding: 12px 8px;
+        font-family: Century Gothic;
+         text-align: center;
+         font-weight: lighter;
+    }
+.facebook{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #21618C;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  padding: 12px 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.youtube{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #C0392B;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  padding: 12px 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.twitter{
+  display: inline-block;
+  border-radius: 4px;
+  background:url("http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/social-twitter-icon.png");
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  padding: 12px 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+a:link {
+	color:#ffffff; 
+	text-decoration:none;
+}
+a:visited {
+	color:#ffffff;  
+	text-decoration:none
+}
+a:hover{
+	color:#1F618D; 
+	text-decoration: none;
+}
+a:active  {
+	color:#ffffff;
+	text-decoration:none
+}
+
+.f-button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #444;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  padding: 12px 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+  .divcontent{
+	height: 110px;
+	border-radius: 3px;
+	width: 100%;
+	border: none;
+	background-color: rgb(46, 134, 193);
+	margin-bottom: 150px;
+	padding-top: 20px;
+	
+  }
+  .divright{
+	box-shadow: 3px 3px  4px #555;
+    float: right;
+	border-radius: 5px;
+    background-color: #2E86C1;
+    width: 375px;
+	padding-bottom: 5px;
+	margin-bottom: 50px;
+	}
+  .divleft{
+    box-shadow: 3px 3px  4px #555;
+    float: left;
+	border-radius: 5px;
+    background-color: #2E86C1;
+    width: 375px;
+	padding-bottom: 5px;
+	margin-bottom: 50px;
+	}
+  .multiple{
+	max-width: 925px;
+	padding-bottom: 200px;
+	left: 200px;
+	right: 200px;
+	background-color: transparent;
+  }
+  .middlediv{
+    padding-bottom: 10px;
+	max-width: 1100px;
+	height: 100%;
+	left: 100px;
+	right: 100px;
+	background-color: #3498DB;
+  }
+  .lowerbox{
+    width: 700px;
+    height: 75px;
+    overflow: hidden;
+	padding-top: 325px;
+	padding-bottom: 30px;
+	padding-right: 100px;
+}
+  .middlebox{
+    box-shadow: 3px 3px  4px #555;
+    border-radius: 5px;
+    background-color: #797D7F;
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+}
+  .header{
+    background-color: #EAEDED;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+	padding-top: 15px;   
+	padding-bottom: 20px;
+  }
+  .headerTitle{
+    width: 100%;
+    height: 100%;
+	text-align: left;
+    overflow: hidden; 
+	padding-left: 20px;
+  }
+  .overlay {
+    background-color: #3498DB;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+	overflow: scroll;
+  }
+  .card{
+	  background-image: url("http://www.olmcatholicschool.com/wpimages/wp5a774500_05_06.jpg");
+	  border-radius: 50%;
+	  height: 200px;
+	  width: 200px;
+  }
+  .card:hover{
+	  background-image: none;
+	  background-color: #3498DB;
+	  cursor: pointer;
+	  animation: flip;
+  }
+  .container{
+    background-color: #3498DB;
+    max-width: 100%;
+	min-height: 100%;
+	margin: 0px;
+	padding: 0px;
+    align: center;
+	overflow: hidden;
+	}
+  .footer {
+	padding: 5px;
+	clear: both;
+    position: relative;
+    z-index: 10;
+    height: 100%;
+	background-color: #2E86C1;
+	color: #ffffff;
+  }
+  .box{
+    background-color: #3498DB;
+    max-width: 1300px;
+    margin: 0px;
+	padding-left: 6px;
+	padding-bottom: 0px;
+    align: center;
+	overflow: hidden;
+  }
+  .content{
+	background-color: transparent;
+    max-width: 1300px;
+	padding: 10px;
+	overflow: hidden;
+  }
+  .bar{
+	background-color: #3498DB;
+    max-width: 1300px;
+	width: 100%;
+	margin:0 auto;
+	padding: 0px;
+    align: center;
+	overflow: hidden;
+  }
+  .handle{
+	text-align: left;
+	width: 100%;
+	padding: 3px;
+	margin: 0px;
+	background-color: #ffffff;
+	display: none;
+}
+#slides {
+    position: relative;
+    height: 100%;
+	width: 100%;
+    padding: 10px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+ nav ul {
+	float: center;
+	font-family: Century Gothic;
+	margin: 0px auto;
+    padding: 0px;
+	text-align: center;
+    background: -webkit-linear-gradient(#5DADE2, #5DADE2);
+    top: 35;
+	overflow: hidden;
+	width: 100%;
+	-webkit-transition: max-height 0.5s;
+	-ms-transition: max-height 0.5s;
+	-o-transition: max-height 0.5s;
+	transition: max-height 0.5s;
+}
+.shadow{
+	background-color: rgba(46, 134, 193, 0.6);
+	
+}
+.navbar-fixed {
+    top: 0;
+    z-index: 10;
+	position: fixed;
+    box-shadow: 0px 0px 10px #888;
+    width: 100%;
+	max-width: 100%;
+}
+ nav ul li {
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+	display: inline-block;
+	color: #fff;
+}
+
+ nav li a {
+    display: block;
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ nav li a.active {
+    background-color: rgb(46, 134, 193);
+    color: #ffffff;
+}
+    .radius {
+    background-color: rgba(46, 134, 193, 0.6);
+    color: #ffffff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    }
+        .radius:hover {
+            color: #fff;
+        }
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+dropdown:hover{
+    background-color: #2E86C1;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(40, 180, 99, 0.6);
+    border: solid 1.5px rgb(40, 180, 99);
+    min-width: 160px;
+	z-index: 1;
+}
+
+.dropdown-content a {
+	background-color: rgba(40, 180, 99, 0.6);
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: rgb(40, 180, 99);
+	font-style: italic;
+	color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.padding{
+	padding-top: 45px;
+}
+table, th, td {
+    border: 5px clear;
+	font-family: Century Gothic;
+	border: collapse;
+    background-color: clear;
+}
+td{
+    color: #ffffff;
+    font-family: Century Gothlic;
+}
+    .divlist {
+        overflow: hidden;
+        max-width: 100%; 
+        max-height: 210px; 
+        padding-right: 20px;
+        padding-left: 40px;
+		overflow-y: scroll;
+    }
+a {
+  text-decoration: none;
+  position: relative;
+}
+.imagelink{
+	color:#ffffff; 
+	text-decoration:none;
+}
+a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: none;
+  transition: 0.4s;
+}
+
+.c-hamburger{
+	display: none;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	left: 5px;
+	width: 35px;
+	height: 35px;
+	font-size: 0;
+	apperance: none;
+	box-shadow: none;
+	border-radius: none;
+	border: none;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+.c-hamburger:focus{
+	outline: none;
+}
+.c-hamburger span{
+	display: block;
+	position: relative;
+	top: 20.6px;
+	left: 8.5px;
+	right: 8.5px;
+	height: 3.75px;
+	beckground: white;
+}
+.c-hamburger span::before,
+.c-hamburger span::after{
+	position: absolute;
+	display:block;
+	margin: auto;
+	padding: auto;
+	left: 0;
+	height: 5px;
+	width: 50%;
+	background-color: #fff;
+	content: "";
+}
+.c-hamburger span::before{
+	top:-20px;
+}
+.c-hamburger span::after{
+	bottom:-20px;
+}
+.c-hamburger--rot {
+  background-color:  #909497;
+}
+
+.c-hamburger--rot span {
+  transition: transform 0.3s;
+}
+
+
+.c-hamburger--rot.is-active {
+  background-color: #797D7F;
+}
+
+.c-hamburger--rot.is-active span {
+  transform: slide;
+}
+.mySlides {
+ display:none
+ }
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.vip{
+	background: url("https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/3/005/06b/2ff/0cff994.jpg");
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	color: #5DADE2;
+}
+.vip:hover{
+	background: #717D7E;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  height: 14px;
+  width: 14px;
+  margin: 0 2px;
+  background-color: lightgray;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+    .activedots {
+        background-color: rgba(40, 180, 99, 0.9);
+    }
+
+.active {
+  background-color: rgba(46, 134, 193, 0.6);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+hr.style-two {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(255,255,255, 0), rgba(255,255,255, 0.75), rgba(255,255,255, 0));
+}
+@-webkit-keyframes fade {
+  from {opacity: .2}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .2}
+  to {opacity: 1}
+}
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: #5DADE2;
+    color: #5F6A6A;
+    text-align: left;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 0;
+    bottom: 75%;
+    left: 50%;
+    margin-left: -245px;
+}
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: #5DADE2 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn .5s;
+    animation: fadeIn .5s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+     /* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Stay on top */
+    top: 0;
+    left: 0;
+	background-color: rgba(52,152,219, 0.9);
+    overflow-x: hidden; /* Disable horizontal scroll #282828 */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 26px;
+    color: white;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #444;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    color: red;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 60px;
+    margin-left: 50px;
+}
+#cal{
+		margin-bottom: 8px;
+		padding: 12px 30px;
+	}
+	#peek{
+		margin-bottom: 8px;
+		padding: 12px 30px;
+	}
+    
+	.youtube:hover{
+		border-radius: 20px;
+		transition: .2s;
+		background: #A02F24;
+	}
+	.footer{
+		background: -webkit-linear-gradient(#2E86C1, #5DADE2);
+	}
+	.divleft{
+		box-shadow: 3px 3px  4px #777;
+		background: -webkit-linear-gradient(#5DADE2, #2E86C1);
+	}
+	.divright{
+		box-shadow: 3px 3px  4px #777;
+		background: -webkit-linear-gradient(#5DADE2, #2E86C1);
+	}
+	.divcontent{
+		background: transparent;
+		border-radius: 0px;
+	}
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+@media screen and (max-width: 750px){
+	nav ul{
+		max-height:0;
+	}
+	.showing{
+		max-height: 25em;
+	}
+	nav ul li {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 10px;
+		text-align: left;
+	}
+	.handle{
+		display: inline-block;
+		padding: 15px 10px;
+		}
+	.c-hamburger{
+		display: block;
+	}
+	.multiple{
+	max-width: 350px;
+	}
+	.divright{
+	  width: 100%;
+	  margin-top: 20px;
+	  margin-bottom: 10px;
+	  border-radius: 20px;
+	}
+	.divleft{
+	  width: 100%;
+	  border-radius: 10px;
+	  margin-bottom: 0px;
+	}
+	.button {
+		display: block;
+		font-size: 12px;
+		width: 150px;
+		margin-bottom: 5px;
+	}
+	.youtube{
+		display: block;
+		font-size: 12px;
+		width: 150px;
+	}
+	a:after {
+	display: none
+	}
+	#q1{
+	display: none;
+	}
+	#q2{
+	display: none;
+	}
+}
+@media screen and (min-width: 1025px){
+	#opennav{
+		display: none;
+	}
+	a{
+		color: #fff;
+	}
+}
+@media screen and (max-width: 1025px){
+	nav ul{
+		display: none;
+	}
+	.header{
+		background-color: transparent;
+		padding-top: 0px;
+		margin-top: 0px;
+	}
+	#w{
+		display: none;
+		padding: 0px;
+		margin: 0px;
+	}
+	#top{
+		background-color: #EAEDED;
+	}
+	#line{
+		display: none;
+	}
+	.multiple{
+		width: 825px;
+	}
+	.footer{
+		box-shadow: none;
+		background: -webkit-linear-gradient(#2E86C1, #5DADE2);
+	}
+	.divleft{
+		box-shadow: 3px 3px  4px #777;
+		background: -webkit-linear-gradient(#5DADE2, #2E86C1);
+	}
+	.divright{
+		box-shadow: 3px 3px  4px #777;
+		background: -webkit-linear-gradient(#5DADE2, #2E86C1);
+	}
+	.divcontent{
+		background: transparent;
+		border-radius: 0px;
+	}
+	#q1{
+		font-size: 28px;
+	}
+	#q2{
+		font-size: 28px;
+	}
+	.dot{
+		height: 15px;
+		width: 15px;
+	}
+	#cal{
+		margin-bottom: 8px;
+		padding: 12px 30px;
+	}
+	#peek{
+		margin-bottom: 8px;
+		padding: 12px 30px;
+	}
+	#image:hover{
+		border-radius: 50%;
+		transition: .5s;
+		background: rgba(46, 134, 193, 0.6);
+	}
+	#image{
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		background: rgb(46, 134, 193);
+		cursor: pointer;
+	}
+}
+.quizlet{
+    border-radius: 5px;
+    background-color: #3498DB;
+    color: white;
+    font-weight: lgihter;
+    outline: none;
+    border: 1.5px solid #3498db;
+    padding: 6px 12px;
+    transition: background-color 0.5s ease;
+}
+.quizlet:hover{
+    background-color: white;
+    color: #3498DB;
+    border: 1.5px solid #3498db;
+    outline: none;
+    cursor: pointer;
+}
+</style>
+	<body>
+	<center>
+    <table style="width: 100%">
+        <tr>
+            <td>
+                <h2 id="name" style="color: #3498DB; font-family: Century Gothic;font-weight: lighter; float: left; margin-left: 30px">Hello, Name!</h2>
+                <h2 id="gpa" style="color: #3498DB; font-family: Century Gothic;font-weight: lighter; float: left; margin-left: 100px">GPA: 0.00</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="quizlet" style="float: left; margin-top: -8px; margin-left: 30px"><h4>Link Quizlet Account</h4></button>
+                <br>
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                <a href="#" onclick="signOut();">Sign out</a>
+                
+            </td>
+        </tr>
+	</table>
+    </center>
+    <script>
+    function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+    </script>
+    <script>
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+</script>
+     <script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
+	</body>
+</html>
